@@ -17,7 +17,8 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         cni_frame.cpp \
-        main.cpp
+        main.cpp \
+        responseserver.cpp
 
 TRANSLATIONS += \
     QrcodeVerify_zh_CN.ts
@@ -28,4 +29,5 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 HEADERS += \
-    cni_frame.h
+    cni_frame.h \
+    responseserver.h
