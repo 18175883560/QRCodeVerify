@@ -17,7 +17,6 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         cni_frame.cpp \
-        image_sender.cpp \
         main.cpp
 
 TRANSLATIONS += \
@@ -29,5 +28,4 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 HEADERS += \
-    cni_frame.h \
-    image_sender.h
+    cni_frame.h
